@@ -17,6 +17,13 @@
 },
 ```
 
+## Style
+1. 添加sass
+    - `npm install sass`
+    - 添加sass 文件 ( .scss)
+    - @use 引用其它文件
+    - ~ 解析node_modules文件下的东西
+
 
 ## 代码分析
 1. `npm install --save source-map-explorer`

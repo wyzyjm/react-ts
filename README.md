@@ -17,6 +17,13 @@
 },
 ```
 
+
+## 代码分析
+1. `npm install --save source-map-explorer`
+2. package.json, `"analyze": "source-map-explorer 'build/static/js/*.js'",`
+3. `npm run build`
+4. `npm run analyze`
+
 ## 组件开发
 - [storybook]https://storybook.js.org/docs/react/get-started/setup
 

@@ -17,6 +17,7 @@
 },
 ```
 6. svg 使用方式
+7. `npm install --save react-router-dom`  安装开发依赖
 
 ## Style
 1. 添加sass
@@ -33,11 +34,11 @@
 3. `npm run build`
 4. `npm run analyze`
 
-## 组件开发
+## Components UI development
 - [storybook]https://storybook.js.org/docs/react/get-started/setup
 
-## 测试
+## Test
 - `npm test`           Starts the test runner.
 
-## 部署
+## Deploy
 - `npm run build`      Bundles the app into static files for production.

@@ -1,12 +1,13 @@
-import React from 'react'
-import logo from './logo.svg'
+import logosvg from './logo.svg'
+import { ReactComponent as Logo } from './logo.svg' // svg 文件 方式二
 import './App.scss'
 
 function App() {
 	return (
 		<div className="App">
 			<header className="App-header">
-				<img src={logo} className="App-logo" alt="logo" />
+				<img src={logosvg} className="App-logo" alt="logo" />
+				<Logo title="logo" />
 				<p>
 					Edit <code>src/App.tsx</code>
 					and save to reload.

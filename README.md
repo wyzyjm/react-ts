@@ -16,6 +16,7 @@
   ]
 },
 ```
+6. svg 使用方式
 
 ## Style
 1. 添加sass
@@ -23,7 +24,8 @@
     - 添加sass 文件 ( .scss)
     - @use 引用其它文件
     - ~ 解析node_modules文件下的东西
-
+2. css重置 : [postcss-normalize](https://github.com/csstools/postcss-normalize)
+3. 浏览器前缀: [autoprefixer](https://github.com/postcss/autoprefixer)
 
 ## 代码分析
 1. `npm install --save source-map-explorer`

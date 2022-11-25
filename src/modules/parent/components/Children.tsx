@@ -1,11 +1,14 @@
 import { useState, useEffect } from 'react'
 
-export interface ChildrenProps {
+export interface ChildrenProps extends React.MapHTMLAttributes<ChildrenProps> {
 	arr: number[]
 	sendValueToParent: (value: number) => void
 }
 
-export const Children = ({ arr, sendValueToParent }: ChildrenProps): JSX.Element => {
+export const Children = (props: ChildrenProps): JSX.Element => {
+	const { arr, sendValueToParent } = props
+	console.log('props', props)
+
 	/**
 	 * 子组件使用父组件的值
 	 * 1. 直接使用

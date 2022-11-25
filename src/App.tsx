@@ -4,13 +4,18 @@ import './App.scss'
 import { Parent1 } from './modules/parent'
 import { Entry } from './modules/context'
 
+import { Layout, Header, Content, Footer } from './components'
+
 function App() {
 	return (
-		<div>
+		<Layout hassider>
+			<Header>我是头</Header>
+			<Content>我是身子</Content>
+			<Footer>我是尾部</Footer>
 			{/* <header className="App-header">
 				<Logo title="logo" className="App-logo" />
 			</header> */}
-			<h1>组件传参</h1>
+			{/* <h1>组件传参</h1>
 			<ul>
 				<li>父传子: 子接收value</li>
 				<li>子传父: 子接收回调函数</li>
@@ -20,8 +25,8 @@ function App() {
 				<Parent1 />
 				<hr />
 				<Entry />
-			</div>
-		</div>
+			</div> */}
+		</Layout>
 	)
 }
 

@@ -24,7 +24,10 @@ export const Parent1 = (): JSX.Element => {
 			</button>
 			<div>父组件接收子组件 传过来的参数: {childrenValue}</div>
 			<hr />
-			<Children arr={arr} sendValueToParent={getValueFormSon} />
+			<Children arr={arr} sendValueToParent={getValueFormSon}>
+				<div>123</div>
+				<Children2 />
+			</Children>
 
 			<hr />
 			<button

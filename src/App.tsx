@@ -1,6 +1,5 @@
 import logosvg from './logo.svg'
-import { ReactComponent as Logo } from './logo.svg' // svg 文件 方式二
-import './App.scss'
+import { ReactComponent as Logo } from './logo.svg' // svg 文件 方式二 
 import { Parent1 } from './modules/parent'
 import { Entry } from './modules/context'
 
@@ -10,11 +9,13 @@ function App() {
 	return (
 		<Layout hassider>
 			<Header>我是头</Header>
-			<Content>我是身子</Content>
+			<Content>
+				<header className="App-header">
+					<Logo title="logo" className="App-logo" />
+				</header>
+			</Content>
 			<Footer>我是尾部</Footer>
-			{/* <header className="App-header">
-				<Logo title="logo" className="App-logo" />
-			</header> */}
+
 			{/* <h1>组件传参</h1>
 			<ul>
 				<li>父传子: 子接收value</li>

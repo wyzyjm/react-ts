@@ -7,6 +7,7 @@ type LayoutChildrenName = 'Header' | 'Content' | 'Footer'
 export const Layout = (props: LayoutProps): JSX.Element => {
 	const { hassider } = props
 	const layOutStyle: CSSProperties = { height: '100vh', display: 'flex', flexDirection: 'column' }
+	// eslint-disable-next-line react-hooks/exhaustive-deps
 	const siderStyle: CSSProperties = { flexBasis: '50px', flexGrow: 0, backgroundColor: 'green' }
 
 	const renderDom = useCallback(

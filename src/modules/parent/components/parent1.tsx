@@ -22,23 +22,15 @@ export const Parent1 = (): JSX.Element => {
 			>
 				父组件改变子组件的值
 			</button>
+
 			<div>父组件接收子组件 传过来的参数: {childrenValue}</div>
 			<hr />
 			<Children arr={arr} sendValueToParent={getValueFormSon}>
 				<div>123</div>
-				<Children2 />
+				{/* <Children2 /> */}
 			</Children>
 
 			<hr />
-			<button
-				onClick={() => {
-					if (children2Ref.current) {
-						// children2Ref.current.chidlrenFn()
-					}
-				}}
-			>
-				执行子组件方法, 失败的
-			</button>
 			<Children2 ref={children2Ref} />
 		</div>
 	)
